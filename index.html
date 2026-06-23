@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claude Code</title>
+    <link rel="stylesheet" href="css/terminal.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/minigames.css">
+</head>
+<body>
+    <div id="app" class="app">
+        <!-- Title Bar -->
+        <div class="title-bar">
+            <div class="title-bar-left">
+                <div class="traffic-lights">
+                    <span class="light red"></span>
+                    <span class="light yellow"></span>
+                    <span class="light green"></span>
+                </div>
+            </div>
+            <span class="title-text">~/projects/palace_project</span>
+            <div class="title-bar-right">
+                <span class="title-badge">opus-4</span>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Sidebar -->
+            <div class="sidebar" id="sidebar">
+                <div class="sidebar-header">
+                    <span class="sidebar-title">EXPLORER</span>
+                </div>
+                <div class="file-tree" id="file-tree">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+
+            <!-- Chat Area -->
+            <div class="chat-area">
+                <div class="messages" id="messages">
+                    <!-- Messages rendered here -->
+                </div>
+
+                <!-- Input Area -->
+                <div class="input-area">
+                    <div class="input-wrapper">
+                        <input type="text" id="input" class="input-field" placeholder="Reply to Claude..." autocomplete="off" spellcheck="false">
+                        <button class="send-btn" id="send-btn">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                <path d="M3 3L13 8L3 13V9.5L9 8L3 6.5V3Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Status Bar -->
+        <div class="status-bar" id="status-bar">
+            <div class="status-left">
+                <span class="status-item" id="status-stats">才学:45 容貌:60 心机:30 医术:20 人缘:55 武力:15</span>
+            </div>
+            <div class="status-right">
+                <span class="status-item" id="status-title">位份:秀女</span>
+                <span class="status-item" id="status-favor">帝:0 后:0 华:0 淑:0</span>
+                <span class="status-item" id="status-suspicion">怀疑:0</span>
+            </div>
+        </div>
+
+        <!-- Work Mode Overlay -->
+        <div class="work-mode-overlay" id="work-mode" style="display:none">
+            <div class="work-mode-content" id="work-mode-content">
+                <!-- Fake code review content -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/utils/typewriter.js"></script>
+    <script src="js/engine/game-state.js"></script>
+    <script src="js/engine/story-engine.js"></script>
+    <script src="js/engine/save-load.js"></script>
+    <script src="js/engine/event-system.js"></script>
+    <script src="js/ui/terminal-ui.js"></script>
+    <script src="js/ui/sidebar.js"></script>
+    <script src="js/ui/status-bar.js"></script>
+    <script src="js/ui/work-mode.js"></script>
+    <script src="js/minigames/poetry.js"></script>
+    <script src="js/minigames/cipher.js"></script>
+    <script src="js/minigames/medicine.js"></script>
+    <script src="js/minigames/tea-ceremony.js"></script>
+    <script src="js/minigames/poison.js"></script>
+    <script src="js/minigames/escape.js"></script>
+    <script src="js/minigames/chess.js"></script>
+    <script src="js/minigames/dodge.js"></script>
+    <script src="js/minigames/banquet.js"></script>
+    <script src="js/data/characters.js"></script>
+    <script src="js/data/story-ch1.js"></script>
+    <script src="js/data/story-ch2.js"></script>
+    <script src="js/data/story-ch3.js"></script>
+    <script src="js/data/story-ch4.js"></script>
+    <script src="js/data/story-ch5.js"></script>
+    <script src="js/data/story-ch6.js"></script>
+    <script src="js/data/side-quests.js"></script>
+    <script src="js/data/achievements.js"></script>
+    <script src="js/data/items.js"></script>
+    <script src="js/data/poetry-db.js"></script>
+    <script src="js/data/events.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
